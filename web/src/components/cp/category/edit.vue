@@ -5,7 +5,7 @@
     
     
     <!--Confirm-->
-    <a-modal v-model:visible="isEdit" :title="`Edit Category | ${categoryGonnaEdit.name}` " @ok="handleOk">
+    <a-modal v-model:visible="isEdit" :title="`Edit Category | ${categoryGonnaEdit.name}` " >
         <div class="input" v-if="!isLoadingEdit">
             <label for="name">Category name : </label>
             <div class="name_input">

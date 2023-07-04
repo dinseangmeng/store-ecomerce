@@ -27,7 +27,7 @@
         </table>
         
     </main>
-    <a-modal v-model:visible="visible" :title="`${detailObject.name } | ${dateFormation(new Date(detailObject.created))}`" @ok="handleOk">
+    <a-modal v-model:visible="visible" :title="`${detailObject.name } | ${dateFormation(new Date(detailObject.created))}`" >
         <p>Id: {{ detailObject._id }}</p>
         <p>Name: {{ detailObject.name }}</p>
         <p>N_SubCategory: {{ detailObject.subCategory.length }}</p>

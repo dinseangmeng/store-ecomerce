@@ -8,6 +8,7 @@
                 <listCategory v-if="store.state.CP_ListingNumber==AdminListingENUM.CATEGORY" />
                 <listSubCategory v-else-if="store.state.CP_ListingNumber==AdminListingENUM.SUB_CATEGORY" />
                 <listProduct v-else-if="store.state.CP_ListingNumber==AdminListingENUM.PRODUCT" />
+                <profile v-else-if="store.state.CP_ListingNumber==AdminListingENUM.PROFILE" />
             </section>
         </main>
         
@@ -22,6 +23,7 @@ import adminSideBar from '../../components/cp/adminSideBar.vue';
 import listCategory from '../../components/cp/category/list.vue';
 import listSubCategory from '../../components/cp/subCategory/list.vue';
 import listProduct from '../../components/cp/product/list.vue';
+import profile from '../../components/cp/profile.vue';
 
 </script>
 

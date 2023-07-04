@@ -7,8 +7,7 @@
     <a-modal
     v-model:visible="isDelete"
     title="Delete Category"
-    
-    @ok="hideModal"
+
     >   
     <h1>Category gonna delete: {{ SubCategoryGonnaDelete.name  }} </h1>
     <h2>Are you sure?</h2>

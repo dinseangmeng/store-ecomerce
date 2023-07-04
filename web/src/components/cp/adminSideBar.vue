@@ -6,7 +6,7 @@
             <button :ref="allEle[2]" @click="toggle($event,AdminListingENUM.PRODUCT)">Product</button>
         </section>
         <section>
-            <button :ref="allEle[3]"  @click="toggle($event,10)">Profile</button>
+            <button :ref="allEle[3]"  @click="toggle($event,AdminListingENUM.PROFILE)">Profile</button>
             <button  @click="logout">Logout</button>
         </section>
     </main>
@@ -35,9 +35,16 @@ const toggle = (event,index) => {
         getSubCategory(index)
     }else if(index==AdminListingENUM.PRODUCT){
         getProduct(index)
+    }else if(index==AdminListingENUM.PROFILE){
+        showProfile(index)
     }
     buttonElement.classList.add('active');
 };
+
+
+const showProfile=(index)=>{
+    store.state.CP_ListingNumber=index
+}
 
 const getCategory= (index)=>{
     store.state.isLoading_cp=true
